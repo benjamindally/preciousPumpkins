@@ -1,10 +1,26 @@
 .main_nav {
   background: purple;
-  padding: 15px 0px;
-  text-align: left;
+  padding: 10px 0px;
+  font-family: "Happy Monkey", sans-serif;
+  /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .small_icon {
-  height: 30px;
+  height: 40px;
   padding: 0px 15px;
+}
+
+.top-nav-words {
+  text-decoration: none;
+  color: orange;
+  position: relative;
+  bottom: 10px;
+  padding: 0px 10px;
+}
+
+.text-right {
+  text-align: right;
 }

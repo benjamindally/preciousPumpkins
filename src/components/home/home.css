@@ -1,0 +1,32 @@
+.home_page_main_wrapper {
+  background: url("../../img/circle_time_pp2.jpg");
+  height: 400px;
+  background-size: cover;
+  opacity: 0.5;
+  font-family: "Happy Monkey", sans-serif, cursive;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.call_to_action {
+  background: rgba(255, 166, 0);
+  width: 140px;
+  height: 50px;
+  border: 4px solid purple;
+  padding: 20px 40px;
+  margin: 250px 40%;
+  vertical-align: bottom;
+  position: absolute;
+}
+
+.call_to_action {
+  opacity: 1;
+  color: rgb(84, 0, 84);
+  font-weight: bold;
+  text-align: center;
+  font-size: 115%;
+}
+
+.call_to_action:hover {
+  background: rgba(255, 166, 0, 0.673);
+  cursor: pointer;
+}
