@@ -1,3 +1,6 @@
+body {
+  background: rgb(252, 225, 252);
+}
 .home_page_main_wrapper {
   background: url("../../img/circle_time_pp2.jpg");
   height: 400px;
@@ -29,4 +32,11 @@
 .call_to_action:hover {
   background: rgba(255, 166, 0, 0.673);
   cursor: pointer;
+}
+
+.basic_text_area {
+  background: white;
+  width: 80%;
+  margin: auto;
+  height: 1000px;
 }
