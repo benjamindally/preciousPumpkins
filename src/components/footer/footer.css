@@ -1,0 +1,16 @@
+.footer {
+  background: purple;
+  height: 100px;
+  margin-top: 75px;
+  font-family: "Happy Monkey", sans-serif, cursive;
+  /* position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%; */
+}
+
+.footer_paragraph p {
+  text-align: center;
+  color: orange;
+  padding-top: 20px;
+}
