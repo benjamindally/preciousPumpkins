@@ -3,11 +3,12 @@ import "./menu.css";
 
 const Menu = () => (
   <div className="main_menu">
-    <a href="#">About Us</a>
-    <a href="#">Programs</a>
-    <a href="#">Spaces</a>
-    <a href="#">Updates</a>
-    <a href="#">Contact Us</a>
+    <a href="/">Home</a>
+    <a href="/about-us">About Us</a>
+    <a href="/programs">Programs</a>
+    <a href="/spaces">Spaces</a>
+    <a href="/updates">Updates</a>
+    <a href="/contact-us">Contact Us</a>
   </div>
 );
 

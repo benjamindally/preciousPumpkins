@@ -1,6 +1,6 @@
 .main_nav {
   background: purple;
-  padding: 10px 0px;
+  padding: 10px 0px 50px 0px;
   font-family: "Happy Monkey", sans-serif;
   /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
   width: 100%;
@@ -10,16 +10,74 @@
 .small_icon {
   height: 40px;
   padding: 0px 15px;
+  float: left;
+}
+
+.small_icon:hover {
+  cursor: pointer;
 }
 
 .top-nav-words {
   text-decoration: none;
   color: orange;
   position: relative;
-  bottom: 10px;
-  padding: 0px 10px;
+  float: left;
+}
+
+.top-nav-words:hover {
+  cursor: pointer;
 }
 
 .text-right {
   text-align: right;
+}
+
+.responsive_menu {
+  display: none;
+  padding: 0px;
+}
+
+.responsive_menu ul {
+  padding: 0px;
+}
+
+.responsive_menu li {
+  list-style-type: none;
+  padding-bottom: 15px;
+}
+
+.responsive_menu li:first-child {
+  padding-top: 10px;
+}
+.responsive_menu li:last-child {
+  padding-bottom: 0px;
+}
+.responsive_menu a {
+  padding: 20px 25px 10px 25px;
+  text-decoration: none;
+  color: orange;
+}
+
+.responsive_menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.show_responsive_menu {
+  display: block;
+  clear: both;
+  padding-bottom: 0px;
+  transition: 1s;
+}
+
+@media screen and (max-width: 760px) {
+  .main_nav {
+    position: fixed;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .show_responsive_menu {
+    display: none;
+  }
 }

@@ -1,13 +1,13 @@
 .main_menu {
   font-family: "Happy Monkey", sans-serif, cursive;
   text-align: center;
-
   padding: 20px 25px 20px 25px;
   margin-top: 0px;
   background: purple;
   z-index: 2;
   position: sticky;
   top: 0;
+  clear: both;
 }
 
 .main_menu a {
@@ -19,4 +19,16 @@
 
 .main_menu a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  .main_menu {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .main_menu {
+    display: none;
+  }
 }

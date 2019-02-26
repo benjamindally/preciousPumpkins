@@ -25,7 +25,7 @@ class Home extends Component {
                 pumpkin. Here you will find the activities, programs, and
                 support for your own little precious pumpkin.{" "}
                 <a className="links" href="/contact-us">
-                  Call us
+                  Contact us
                 </a>{" "}
                 today to set up a tour.
               </p>
