@@ -12,9 +12,9 @@ class Home extends Component {
         </div>
         <div>
           <div className="basic_text_area">
-            <h1>Welcome!</h1>
+            <h1 className="padding3015percent">Welcome!</h1>
             <div className="butterfly_wrapper">
-              <p>
+              <p className="text-center inline">
                 <img
                   className="butterfly large_icon"
                   src={require("../../img/butterfly3.svg")}

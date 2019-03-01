@@ -39,6 +39,8 @@
 
 .responsive_menu ul {
   padding: 0px;
+  position: relative;
+  top: 20px;
 }
 
 .responsive_menu li {
@@ -71,8 +73,8 @@
 
 @media screen and (max-width: 760px) {
   .main_nav {
-    position: fixed;
-    padding-bottom: 10px;
+    position: sticky;
+    /* padding-bottom: 10px; */
   }
 }
 

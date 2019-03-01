@@ -19,7 +19,6 @@ class Nav extends Component {
       window.location.href = "/";
     } else {
       this.setState({ menuOpen: true });
-
       menuTrigger.className += " show_responsive_menu";
       navWrapper.className += " hide_icon_and_name";
     }
@@ -44,9 +43,6 @@ class Nav extends Component {
             </li>
             <li>
               <a href="/about-us">About Us</a>
-            </li>
-            <li>
-              <a href="/programs">Programs</a>
             </li>
             <li>
               <a href="/spaces">Spaces</a>

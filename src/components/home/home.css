@@ -1,7 +1,27 @@
 body {
   background: rgb(252, 225, 252);
+  margin: 0px;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.inline {
+  display: inline;
+}
+
+.padding20px {
+  padding: 0px 20px 15px 20px;
+}
+
+.text-indent {
+  text-indent: 20px;
+}
+
+/* .padding3015percent{
+  padding:  3% 0 1% 5%;
+} */
 .home_page_main_wrapper {
   background: url("../../img/circle_time_pp2.jpg");
   height: 400px;
@@ -69,8 +89,6 @@ body {
   font-family: "Kalam", cursive;
   color: purple;
   font-size: 150%;
-  text-align: center;
-  display: inline;
 }
 
 .links {
