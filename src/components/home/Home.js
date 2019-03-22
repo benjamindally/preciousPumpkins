@@ -24,13 +24,23 @@ class Home extends Component {
                 needs. Everyone who walks through the door is a precious
                 pumpkin. Here you will find the activities, programs, and
                 support for your own little precious pumpkin.{" "}
-                <a className="links" href="/contact-us">
+                <a className="links" href="/contact">
                   Contact us
                 </a>{" "}
                 today to set up a tour.
               </p>
             </div>
           </div>
+        </div>
+        <div className="quote">
+          <p className="text-center">
+            <blockquote>
+              All three of my kids go to Kathy and they absolutely love her and
+              the staff that work with her. It is truly a home-like environment
+              and each child feels equally loved by everyone. <br />
+              <br />- Hilary Padilla
+            </blockquote>
+          </p>
         </div>
         <div className="facebook_wrapper">
           <a href="https://www.facebook.com/preciouspumpkinschildcare/">

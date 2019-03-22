@@ -9,6 +9,13 @@
   {
     "id": 2,
     "name": "Preschool Room",
-    "description": "The Preschool room is a great area to read book, build towers, play alphabet games, and more. Newly redesigned in 2018, the room is a safe space for drawing, lounging, or playing with a friend"
+    "description": "The Preschool room is a great area to read book, build towers, play alphabet games, and more. Newly redesigned in 2018, the room is a safe space for drawing, lounging, or playing with a friend",
+    "image": "./assets/images/preschool.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Backyard",
+    "description": "The newly built backyard area is great for fresh air, fun, and friends. There are plenty of bikes, playstructures, balls, and toys for everyone. The little ones often shoot baskets in the small basketball hoop and then run over for a drink of water in the seating area. There is even a place to color or work on art projects. The spacious area is a favorite for everyone.",
+    "image": "./assets/images/backyard.jpg"
   }
 ]

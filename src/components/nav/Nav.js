@@ -51,7 +51,7 @@ class Nav extends Component {
               <a href="/updates">Updates</a>
             </li>
             <li>
-              <a href="/contact-us">Contact Us</a>
+              <a href="/contact">Contact Us</a>
             </li>
           </ul>
         </div>
