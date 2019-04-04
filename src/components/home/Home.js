@@ -33,14 +33,12 @@ class Home extends Component {
           </div>
         </div>
         <div className="quote">
-          <p className="text-center">
-            <blockquote>
-              All three of my kids go to Kathy and they absolutely love her and
-              the staff that work with her. It is truly a home-like environment
-              and each child feels equally loved by everyone. <br />
-              <br />- Hilary Padilla
-            </blockquote>
-          </p>
+          <blockquote className="text-center">
+            All three of my kids go to Kathy and they absolutely love her and
+            the staff that work with her. It is truly a home-like environment
+            and each child feels equally loved by everyone. <br />
+            <br />- Hilary Padilla
+          </blockquote>
         </div>
         <div className="facebook_wrapper">
           <a href="https://www.facebook.com/preciouspumpkinschildcare/">

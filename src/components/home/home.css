@@ -75,7 +75,7 @@ body {
   font-family: "Sacramento", cursive;
   font-size: 500%;
   color: purple;
-  padding: 3% 0 1% 5%;
+  padding: 3% 0 1% 0%;
   margin: 0px;
 }
 
@@ -126,3 +126,5 @@ body {
 .facebook_wrapper h1:hover {
   text-decoration: underline;
 }
+
+/* put in a media query at 1026px to move  the quote box up a bit */

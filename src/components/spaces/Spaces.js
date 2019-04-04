@@ -9,9 +9,6 @@ class Spaces extends Component {
     img: img,
   };
 
-  componentDidMount() {
-    console.log(spaceInformation[0].image);
-  }
   render() {
     return (
       <div>
