@@ -35,13 +35,8 @@ class About extends Component {
           <h1 className="text-center">Philosophy and Services</h1>
           <p className="basic_paragraph text-indent">
             Here at Precous Pumpkins, we take care of all your child's needs.
-            Your tuition includes the following:
-            <ul>
-              <li>breakfast</li>
-              <li>lunch</li>
-              <li>snack</li>
-              <li>diapers</li>
-            </ul>
+            Your tuition includes breakfast, lunch, snack, diapers, and a whole
+            lot of hugs.
           </p>
           <p className="basic_paragraph text-indent">
             We engage in fun, interactive games and songs, help with potty

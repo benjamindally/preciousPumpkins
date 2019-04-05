@@ -5,56 +5,34 @@ import updatesAPI from "../../utils/updatesAPI";
 import "./dashboard.css";
 
 class Owner extends Component {
-  state = {
-    updatesArray: [],
+  deleteUpdate = () => {
+    let id = this.props._id;
+    this.props.deleteUpdate(id);
   };
 
-  componentDidMount() {
-    this.readUpdates();
-  }
-
-  readUpdates = () => {
-    updatesAPI
-      .readUpdates()
-      .then(response => {
-        this.setState({ updatesArray: response.data });
-      })
-
-      .catch(err => console.log(err));
-  };
   render() {
-    const sticky = this.state.updatesArray.sticky;
-    let stickyButton;
+    const stickyUpdate = this.props.sticky;
 
-    if (sticky) {
-      stickyButton = (
-        <button onClick="toggleSticky" className="button text-center">
-          Unpin From Top
-        </button>
-      );
-    } else {
-      stickyButton = (
-        <button onClick="toggleSticky" className="button text-center">
-          Pin to Top
-        </button>
-      );
-    }
     return (
-      <div className="updates_sidebar">
-        <h1 className="floating_header text-center">All Updates</h1>
-        {this.state.updatesArray.map(update => (
-          <div className="basic_text_area padding20px">
-            <h1>{update.title}</h1>
-            <p className="basic_paragraph text-center">{update.bodyText}</p>
-            <button
-              id={update._id}
-              className="button text-center"
-              onClick={() => this.deleteUpdate}
-            >
-              Delete Update
-            </button>
+      <div>
+        <div className="basic_text_area padding20px">
+          <h1>{this.props.title}</h1>
+          <p>{this.props.bodyText}</p>
+          <div>
+            {stickyUpdate ? (
+              <button onClick={this.props.toggleSticky} className="button">
+                Unpin From Top
+              </button>
+            ) : (
+              <button onClick={this.props.toggleSticky} className="button">
+                Pin to Top
+              </button>
+            )}
           </div>
-        ))}
+          <button className="button" onClick={this.deleteUpdate}>
+            Delete Update
+          </button>
+        </div>
       </div>
     );
   }

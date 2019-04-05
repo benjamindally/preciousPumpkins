@@ -1,6 +1,7 @@
 .updates_sidebar {
   width: 40%;
   margin-left: 20px;
+  padding-bottom: 20px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -13,7 +14,7 @@
 .button {
   display: flex;
   overflow: hidden;
-  margin: auto;
+  margin: 0px auto 10px auto;
   padding: 12px 12px;
 
   cursor: pointer;
