@@ -14,7 +14,15 @@ export default {
   },
 
   deleteUpdate: function(updateId) {
-    return axios.post("/api/updates" + updateId);
+    return axios.delete("/api/updates/" + updateId);
+  },
+
+  toggleSticky: function(updateId) {
+    return axios.put("/api/updates/pin/" + updateId);
+  },
+
+  removeSticky: function(updateId) {
+    return axios.put("/api/updates/unpin/" + updateId);
   },
 
   createUser: function() {
@@ -30,6 +38,6 @@ export default {
   },
 
   deleteUser: function(userId) {
-    return axios.post("/api/users" + userId);
+    return axios.delete("/api/users" + userId);
   },
 };

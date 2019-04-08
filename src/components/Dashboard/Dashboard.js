@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import updatesAPI from "../../utils/updatesAPI";
-import Owner from "./Owner";
+import Owner from "./UpdatesDashboard";
 import "./dashboard.css";
 
 class Dashboard extends Component {
@@ -23,8 +23,24 @@ class Dashboard extends Component {
   };
 
   deleteUpdate = id => {
-    alert(`Are you sure you want to delete this update?`);
-    updatesAPI.deleteUpdate(id).then(response => console.log("deleted"));
+    if (window.confirm(`Are you sure you want to delete this update?`)) {
+      updatesAPI.deleteUpdate(id).then(response => console.log("deleted"));
+      window.location.reload();
+    } else {
+      console.log(`cancelled`);
+    }
+  };
+
+  toggleSticky = id => {
+    updatesAPI.toggleSticky(id).then(response => {
+      window.location.reload();
+    });
+  };
+
+  removeSticky = id => {
+    updatesAPI.removeSticky(id).then(response => {
+      window.location.reload();
+    });
   };
 
   render() {
@@ -39,7 +55,9 @@ class Dashboard extends Component {
             sticky={updates.sticky}
             bodyText={updates.bodyText}
             toggleSticky={this.toggleSticky}
+            removeSticky={this.removeSticky}
             deleteUpdate={this.deleteUpdate}
+            key={updates._id}
           />
         ))}
       </div>

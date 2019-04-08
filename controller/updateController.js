@@ -13,8 +13,20 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  deletePost: function(req, res) {
+  deleteUpdate: function(req, res) {
     db.Update.deleteOne({ _id: req.params.id })
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  },
+
+  toggleSticky: function(req, res) {
+    db.Update.findOneAndUpdate({ _id: req.params.id }, { sticky: true })
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  },
+
+  removeSticky: function(req, res) {
+    db.Update.findOneAndUpdate({ _id: req.params.id }, { sticky: false })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },

@@ -6,6 +6,7 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   width: ${props => props.width};
   height: ${props => props.height};
+  z-index: ${props => props.zindex};
 `;
 
 export default class Map extends Component {
@@ -22,10 +23,10 @@ export default class Map extends Component {
       maxNativeZoom: 17,
     }).addTo(this.map);
 
-    L.marker([38.6705834, -121.7592721]).addTo(this.map);
+    L.circle([38.671172, -121.758201]).addTo(this.map);
   }
 
   render() {
-    return <Wrapper width="600px" height="500px" id="map" />;
+    return <Wrapper width="auto" height="500px" zindex="1" id="map" />;
   }
 }

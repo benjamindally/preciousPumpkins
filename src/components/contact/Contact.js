@@ -8,7 +8,7 @@ class Contact extends Component {
       <div>
         <div className="basic_text_area padding20px">
           <h1 className="text-center">Contact Us</h1>
-          <div>
+          <div className="map_wrapper">
             <Map />
           </div>
           <p className="basic_paragraph text-center">

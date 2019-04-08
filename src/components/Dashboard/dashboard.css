@@ -3,12 +3,13 @@
   margin-left: 20px;
   padding-bottom: 20px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background: white;
 }
 
 .floating_header {
   font-family: "Happy Monkey", sans-serif, cursive;
   padding-top: 2%;
-  color: purple;
+  color: orange;
 }
 
 .button {
@@ -61,4 +62,31 @@ button:active {
 button:focus {
   outline: 1px dotted #959595;
   outline-offset: -4px;
+}
+
+.edit_text_area {
+  width: 100%;
+  height: 300px;
+  font-family: "Happy Monkey", sans-serif, cursive;
+  font-size: 1.5em;
+  color: orange;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1300px) {
+  .updates_sidebar {
+    width: 80%;
+    margin: auto;
+    min-width: 380px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .updates_sidebar {
+    width: 80%;
+  }
+
+  .dashboard_sidebar {
+    padding: 10px;
+  }
 }

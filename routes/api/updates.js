@@ -6,5 +6,8 @@ router
   .get(updateController.findAll)
   .post(updateController.create);
 
-router.route("/:id").delete(updateController.deletePost);
+router.route("/pin/:id").put(updateController.toggleSticky);
+router.route("/unpin/:id").put(updateController.removeSticky);
+
+router.route("/:id").delete(updateController.deleteUpdate);
 module.exports = router;

@@ -17,13 +17,10 @@ class Updates extends Component {
       .readUpdates()
       .then(response => {
         const updatesArray = response.data;
-
         const sortedArray = updatesArray.sort((a, b) => (a.sticky ? -1 : 1));
         const slicedArray = sortedArray.slice(0, 11);
         this.setState({ slicedArray: slicedArray });
-        console.log(slicedArray);
       })
-
       .catch(err => console.log(err));
   };
 

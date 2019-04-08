@@ -5,9 +5,9 @@ class SpaceCard extends Component {
   render() {
     return (
       <div>
-        <div className="basic_space_area">
+        <div className="basic_space_area text-center">
           <div className="space_header text-center">
-            <h2 className="text-left float_left">{this.props.name}</h2>
+            <h2 className="text-center float_left">{this.props.name}</h2>
           </div>
           <div className="space_picture_wrapper">
             <img
