@@ -26,6 +26,13 @@ class Owner extends Component {
     this.setState({ editThetext: true });
   };
 
+  doneEditing = (id, newBodyText) => {
+    const editText = {
+      id: id,
+      newBodyText: newBodyText,
+    };
+    this.props.doneEditing(editText);
+  };
   render() {
     const stickyUpdate = this.props.sticky;
 
@@ -34,7 +41,11 @@ class Owner extends Component {
         <div className="basic_text_area padding20px dashboard_sidebar">
           <h1>{this.props.title}</h1>
           {this.state.editThetext ? (
-            <EditTxt id={this.props.id} bodyText={this.props.bodyText} />
+            <EditTxt
+              id={this.props.id}
+              bodyText={this.props.bodyText}
+              doneEditing={this.doneEditing}
+            />
           ) : (
             <div>
               <p id="update_body_text">{this.props.bodyText}</p>
@@ -61,19 +72,6 @@ class Owner extends Component {
           <button id={this.props.id} className="button" onClick={this.getId}>
             Delete Update
           </button>
-          {/* {this.state.editThetext ? (
-            <button id={this.props.id} className="button">
-              Done Editing
-            </button>
-          ) : (
-            <button
-              id={this.props.id}
-              className="button"
-              onClick={this.editText}
-            >
-              Edit Text
-            </button>
-          )} */}
         </div>
       </div>
     );

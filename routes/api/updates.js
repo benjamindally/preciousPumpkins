@@ -8,6 +8,7 @@ router
 
 router.route("/pin/:id").put(updateController.toggleSticky);
 router.route("/unpin/:id").put(updateController.removeSticky);
+router.route("/edit/:id").post(updateController.newBodyText);
 
 router.route("/:id").delete(updateController.deleteUpdate);
 module.exports = router;

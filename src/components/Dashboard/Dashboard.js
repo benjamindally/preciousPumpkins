@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import updatesAPI from "../../utils/updatesAPI";
-import Owner from "./UpdatesDashboard";
+import Updates from "./UpdatesDashboard";
+import NewPost from "./NewPost";
 import "./dashboard.css";
 
 class Dashboard extends Component {
@@ -43,23 +44,42 @@ class Dashboard extends Component {
     });
   };
 
+  doneEditing = editBodyText => {
+    const newBodyText = { bodyText: editBodyText.newBodyText };
+
+    updatesAPI.newBodyText(editBodyText.id, newBodyText).then(response => {
+      window.location.reload();
+      console.log(response);
+    });
+  };
+
+  postNewUpdate = newUpdateInformation => {
+    updatesAPI.createUpdate(newUpdateInformation).then(response => {
+      window.location.reload();
+    });
+  };
+
   render() {
     return (
-      <div className="updates_sidebar">
-        <h1 className="floating_header text-center">All Updates</h1>
+      <div>
+        <NewPost postNewUpdate={this.postNewUpdate} />
+        <div className="updates_sidebar">
+          <h1 className="floating_header text-center">All Updates</h1>
 
-        {this.state.updatesArray.map(updates => (
-          <Owner
-            id={updates._id}
-            title={updates.title}
-            sticky={updates.sticky}
-            bodyText={updates.bodyText}
-            toggleSticky={this.toggleSticky}
-            removeSticky={this.removeSticky}
-            deleteUpdate={this.deleteUpdate}
-            key={updates._id}
-          />
-        ))}
+          {this.state.updatesArray.map(updates => (
+            <Updates
+              id={updates._id}
+              title={updates.title}
+              sticky={updates.sticky}
+              bodyText={updates.bodyText}
+              toggleSticky={this.toggleSticky}
+              removeSticky={this.removeSticky}
+              deleteUpdate={this.deleteUpdate}
+              doneEditing={this.doneEditing}
+              key={updates._id}
+            />
+          ))}
+        </div>
       </div>
     );
   }

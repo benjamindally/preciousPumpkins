@@ -9,8 +9,9 @@ export default {
     return axios.get("/api/updates");
   },
 
-  updateUpdate: function(updateId, updateNewInformation) {
-    return axios.get("/api/updates" + updateId, updateNewInformation);
+  newBodyText: function(updateId, bodyText) {
+    console.log(bodyText);
+    return axios.post("/api/updates/edit/" + updateId, bodyText);
   },
 
   deleteUpdate: function(updateId) {

@@ -1,6 +1,6 @@
 .updates_sidebar {
-  width: 40%;
-  margin-left: 20px;
+  width: 90%;
+  margin: auto;
   padding-bottom: 20px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   background: white;
@@ -12,6 +12,36 @@
   color: orange;
 }
 
+.new_post {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.form--lable {
+  font-family: "Happy Monkey", sans-serif, cursive;
+  padding-top: 2%;
+  color: orange;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.form--lable__input {
+  width: 80%;
+  height: 50px;
+  margin: 20px 0px;
+  font-family: "Happy Monkey", sans-serif, cursive;
+  font-size: 1.2em;
+  color: orange;
+}
+
+.form--lable__textarea {
+  width: 80%;
+  height: 300px;
+  margin: 20px 0px;
+  font-family: "Happy Monkey", sans-serif, cursive;
+  font-size: 1.2em;
+  color: orange;
+}
 .button {
   display: flex;
   overflow: hidden;

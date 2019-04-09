@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export default class EditTxt extends Component {
   state = {
-    bodyText: "",
+    bodyText: this.props.bodyText,
   };
 
   handleChange = event => {
@@ -12,17 +12,27 @@ export default class EditTxt extends Component {
     });
   };
 
+  doneEditing = event => {
+    event.preventDefault();
+    let newBodyText = this.state.bodyText;
+    let id = this.props.id;
+    this.props.doneEditing(id, newBodyText);
+  };
+
   render() {
     return (
       <div>
         <textarea
+          value={this.state.bodyText}
           className="edit_text_area"
           name="bodyText"
-          onChange="handleChange"
+          onChange={this.handleChange}
+        />
+        <button
+          id={this.props.id}
+          className="button"
+          onClick={this.doneEditing}
         >
-          {this.props.bodyText}
-        </textarea>
-        <button id={this.props.id} className="button">
           Done Editing
         </button>
       </div>

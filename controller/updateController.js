@@ -8,13 +8,22 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   create: function(req, res) {
-    console.log(req.body);
     db.Update.create(req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
   deleteUpdate: function(req, res) {
     db.Update.deleteOne({ _id: req.params.id })
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  },
+
+  newBodyText: function(req, res) {
+    console.log(req.body.bodyText);
+    db.Update.findOneAndUpdate(
+      { _id: req.params.id },
+      { bodyText: [req.body.bodyText] }
+    )
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
