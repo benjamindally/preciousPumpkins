@@ -2,7 +2,7 @@ import axios from "axios";
 
 export default {
   createUpdate: function(updateInformation) {
-    return axios.post("/api/updates" + updateInformation);
+    return axios.post("/api/updates", updateInformation);
   },
 
   readUpdates: function() {
@@ -10,7 +10,6 @@ export default {
   },
 
   newBodyText: function(updateId, bodyText) {
-    console.log(bodyText);
     return axios.post("/api/updates/edit/" + updateId, bodyText);
   },
 

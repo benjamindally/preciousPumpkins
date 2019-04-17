@@ -6,6 +6,10 @@
   background: white;
 }
 
+.update_text p {
+  white-space: pre-wrap;
+}
+
 .floating_header {
   font-family: "Happy Monkey", sans-serif, cursive;
   padding-top: 2%;
@@ -42,6 +46,7 @@
   font-size: 1.2em;
   color: orange;
 }
+
 .button {
   display: flex;
   overflow: hidden;

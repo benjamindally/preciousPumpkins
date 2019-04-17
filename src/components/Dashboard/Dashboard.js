@@ -7,12 +7,18 @@ import "./dashboard.css";
 class Dashboard extends Component {
   state = {
     updatesArray: [],
+    previousUpdatesArray: [],
   };
 
   componentDidMount() {
     this.readUpdates();
   }
 
+  // componentDidUpdate(previousUpdatesArray) {
+  //   if (this.state.updatesArray != this.state.previousUpdatesArray) {
+  //     this.fetchData();
+  //   }
+  // }
   readUpdates = () => {
     updatesAPI
       .readUpdates()
@@ -25,8 +31,7 @@ class Dashboard extends Component {
 
   deleteUpdate = id => {
     if (window.confirm(`Are you sure you want to delete this update?`)) {
-      updatesAPI.deleteUpdate(id).then(response => console.log("deleted"));
-      window.location.reload();
+      updatesAPI.deleteUpdate(id).then(response => this.readUpdates());
     } else {
       console.log(`cancelled`);
     }
@@ -34,13 +39,13 @@ class Dashboard extends Component {
 
   toggleSticky = id => {
     updatesAPI.toggleSticky(id).then(response => {
-      window.location.reload();
+      this.readUpdates();
     });
   };
 
   removeSticky = id => {
     updatesAPI.removeSticky(id).then(response => {
-      window.location.reload();
+      this.readUpdates();
     });
   };
 
@@ -49,13 +54,12 @@ class Dashboard extends Component {
 
     updatesAPI.newBodyText(editBodyText.id, newBodyText).then(response => {
       window.location.reload();
-      console.log(response);
     });
   };
 
   postNewUpdate = newUpdateInformation => {
     updatesAPI.createUpdate(newUpdateInformation).then(response => {
-      window.location.reload();
+      this.readUpdates();
     });
   };
 

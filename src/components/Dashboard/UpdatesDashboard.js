@@ -47,8 +47,7 @@ class Owner extends Component {
               doneEditing={this.doneEditing}
             />
           ) : (
-            <div>
-              <p id="update_body_text">{this.props.bodyText}</p>
+            <div className="update_text">
               <button
                 id={this.props.id}
                 className="button"
@@ -56,6 +55,7 @@ class Owner extends Component {
               >
                 Edit Text
               </button>
+              <p id="update_body_text">{this.props.bodyText}</p>
             </div>
           )}
           <div>
