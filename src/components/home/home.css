@@ -35,7 +35,7 @@ body {
 }
 
 .quote {
-  margin-top: 150px;
+  margin: 100px 0px;
   background: #93ffd9c4;
   color: orange;
   padding: 80px 100px 40px 100px;
@@ -130,4 +130,30 @@ body {
   text-decoration: underline;
 }
 
+.information_image_wrapper {
+  text-align: center;
+}
+
+.information_image {
+  width: 90%;
+  margin: 50px 0px 0px 0px;
+}
+
+.call_to_action_link {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .quote {
+    font-size: 120%;
+    margin-top: 50px;
+    padding: 30px 20px;
+  }
+  .basic_text_area {
+    width: 95%;
+  }
+  .padding20px {
+    padding: 0px 15px;
+  }
+}
 /* put in a media query at 1026px to move  the quote box up a bit */

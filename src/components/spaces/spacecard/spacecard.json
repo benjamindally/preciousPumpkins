@@ -17,5 +17,11 @@
     "name": "Backyard",
     "description": "The newly built backyard area is great for fresh air, fun, and friends. There are plenty of bikes, playstructures, balls, and toys for everyone. The little ones often shoot baskets in the small basketball hoop and then run over for a drink of water in the seating area. There is even a place to color or work on art projects. The spacious area is a favorite for everyone.",
     "image": "./assets/images/backyard.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Garden",
+    "description": "During the spring and summer, one of our favorite spaces is the garden. In the garden, kids get a chance to see plants grow and even plant their own. Whether it's pointing out a fuzzy catepiller or looking at all the flowers, everyone has a great time learning and playing.",
+    "image": "./assets/images/gardening_pp.jpg"
   }
 ]

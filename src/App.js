@@ -8,9 +8,6 @@ import Footer from "./components/footer/Footer";
 import About from "./components/about/About";
 import Spaces from "./components/spaces/Spaces";
 import Contact from "./components/contact/Contact";
-import Updates from "./components/updates/Updates";
-import Login from "./components/Login/Login";
-import Dashboard from "./components/Dashboard/Dashboard.js";
 
 const App = () => (
   <Router>
@@ -22,9 +19,6 @@ const App = () => (
         <Route exact path="/about-us" component={About} />
         <Route exact path="/spaces" component={Spaces} />
         <Route exact path="/contact" component={Contact} />
-        <Route exact path="/updates" component={Updates} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/dashboard" component={Dashboard} />
       </Switch>
       <Footer />
     </div>

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./home.css";
+import Info from "../info-card/Info";
 
 class Home extends Component {
   render() {
@@ -7,7 +8,9 @@ class Home extends Component {
       <div>
         <div className="home_page_main_wrapper">
           <div className="call_to_action">
-            <div className="call_to_action_words">Join Our Family</div>
+            <a href="/contact-us" className="call_to_action_link">
+              <div className="call_to_action_words">Join Our Family</div>
+            </a>
           </div>
         </div>
         <div>
@@ -40,6 +43,7 @@ class Home extends Component {
             <br />- Hilary Padilla
           </blockquote>
         </div>
+        <Info />
         <div className="facebook_wrapper">
           <a href="https://www.facebook.com/preciouspumpkinschildcare/">
             <h1>See the Latest from our Facebook Page</h1>

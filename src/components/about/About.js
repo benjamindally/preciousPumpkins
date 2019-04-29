@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./about.css";
+import Info from "../info-card/Info";
 
 class About extends Component {
   render() {
@@ -31,6 +32,7 @@ class About extends Component {
             day out as I care for the little precious pumpkins
           </p>
         </div>
+        <Info />
         <div className="basic_text_area padding20px">
           <h1 className="text-center">Philosophy and Services</h1>
           <p className="basic_paragraph text-indent">
