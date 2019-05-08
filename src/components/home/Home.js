@@ -8,7 +8,7 @@ class Home extends Component {
       <div>
         <div className="home_page_main_wrapper">
           <div className="call_to_action">
-            <a href="/contact-us" className="call_to_action_link">
+            <a href="/contact" className="call_to_action_link">
               <div className="call_to_action_words">Join Our Family</div>
             </a>
           </div>

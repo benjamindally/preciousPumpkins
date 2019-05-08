@@ -8,9 +8,7 @@ class Contact extends Component {
       <div>
         <div className="basic_text_area padding20px">
           <h1 className="text-center">Contact Us</h1>
-          <div className="map_wrapper">
-            <Map />
-          </div>
+
           <p className="basic_paragraph text-center">
             Give us a call anytime to set up a tour. We'd be happy to show you
             around and introduce you to our wonderful Precious Pumpkins.
@@ -19,6 +17,9 @@ class Contact extends Component {
           <p className="basic_paragraph text-center">
             708 Lopes Ct. Woodland, CA 95695
           </p>
+          <div className="map_wrapper">
+            <Map />
+          </div>
         </div>
       </div>
     );

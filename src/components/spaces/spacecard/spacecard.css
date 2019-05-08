@@ -12,7 +12,7 @@
 
 .basic_space_area h2 {
   font-family: "Happy Monkey", sans-serif, cursive;
-  color: purple;
+  color: #7f00c4;
   padding: 30px 0px 10px 20px;
 }
 
@@ -23,12 +23,12 @@
 
 .space_picture {
   width: 90%;
-  z-index: 2;
+  z-index: 0;
 }
 
 .space_paragraph {
   font-family: "Happy Monkey", sans-serif, cursive;
-  color: purple;
+  color: #7f00c4;
   padding: 20px 15px 10px 15px;
   font-size: 115%;
 }

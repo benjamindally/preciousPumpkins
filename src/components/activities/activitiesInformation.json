@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Circle Time",
+    "description": "Each morning begins with what we call Circle Time. Everyone joins in a circle in the Multipurpose Room with one of the staff for songs, stories, activities, games, word blends and more. It's a time for the kids to get to know each other while also working on learning something.",
+    "image": "./assets/images/circle_time_pp2.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Arts and Crafts",
+    "description": "One of our favorite pastimes is creating. We like to let our precious pumpkins creativitiy shine through painting, drawing, arts, and other crafts. Don't be surprised if your precious pumpkins comes home with a new piece of art for the fridge! We love to see how they express themselves and the unique creations they make.",
+    "image": "./assets/images/arts_crafts.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Fun in the Sun",
+    "description": "Another fun activity is all the time we get to spend outdoors in the huge backyard. Kids can ride bikes, swing on swings, play basketball, play with cars, jump on the giant piano, relax in the shade, and so much more. There's never a dull moment spent outside running around and enjoying a nice afternoon.",
+    "image": "./assets/images/kid_photo_pp_edited.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Dress Up",
+    "description": "Let your imagination lead the way in a fun game of dress up! We have so many different clothes to choose from and all the precious pumpkins put on a smile to go with their outfit during this fun time. We dance, sing, and play in our dress up clothes whenever the mood strikes us.",
+    "image": "./assets/images/dressup.jpg"
+  },
+  {
+    "id": 5,
+    "name": "And More!",
+    "description": "There really are just too many activities to keep everyone engaged and having fun all day long. It's our goal to keep everyone learning, moving, playing, and laughing as much as possible. We even have guest performers who come in for balloon animals, face painting, and more!",
+    "image": "./assets/images/painting.jpg"
+  }
+]

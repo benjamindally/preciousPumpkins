@@ -77,7 +77,7 @@ body {
 .basic_text_area h1 {
   font-family: "Sacramento", cursive;
   font-size: 500%;
-  color: orange;
+  color: #7f00c4;
   padding: 3% 0 1% 2%;
   margin: 0px;
 }
@@ -98,7 +98,7 @@ body {
 
 .basic_text_area p {
   font-family: "Kalam", cursive;
-  color: orange;
+  color: #7f00c4;
   font-size: 150%;
 }
 

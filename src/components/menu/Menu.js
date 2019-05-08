@@ -6,7 +6,7 @@ const Menu = () => (
     <a href="/">Home</a>
     <a href="/about-us">About Us</a>
     <a href="/spaces">Spaces</a>
-    <a href="/updates">Activities</a>
+    <a href="/activities">Activities</a>
     <a href="/contact">Contact Us</a>
   </div>
 );

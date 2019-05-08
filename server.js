@@ -1,6 +1,5 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const mongoose = require("mongoose");
 const path = require("path");
 const routes = require("./routes");
 const app = express();
@@ -22,15 +21,6 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "client/build")));
 // Routes
 app.use(routes);
-
-mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost:27017/precious_db", {
-  useNewUrlParser: true,
-});
-
-var db = mongoose.connection;
-
-db.on("error", console.error.bind(console, "Mongo DB connection error:"));
 
 // Start the API server
 const PORT = process.env.PORT || 3001;
