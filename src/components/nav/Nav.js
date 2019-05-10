@@ -28,13 +28,17 @@ class Nav extends Component {
       <nav className="main_nav">
         <div className="main_nav_wrapper" id="main_nav_wrapper_id">
           {" "}
-          <img
-            className="pumpkin small_icon"
-            src={require("../../img/pumpkin.svg")}
-            alt="Pumpking Logo"
-            onClick={this.responsiveNav}
-          />
-          <p className="top-nav-words">Precious Pumpkins Childcare</p>
+          <div>
+            <img
+              className="pumpkin small_icon"
+              src={require("../../img/pumpkin.svg")}
+              alt="Pumpking Logo"
+              onClick={this.responsiveNav}
+            />
+          </div>
+          <p className="top-nav-words" onClick={this.responsiveNav}>
+            Precious Pumpkins Childcare
+          </p>
         </div>
         <div className="responsive_menu" id="responsive_menu_id">
           <ul>

@@ -26,36 +26,35 @@ body {
   padding:  3% 0 1% 5%;
 } */
 .home_page_main_wrapper {
-  background: url("../../img/circle_time_pp2.jpg");
+  background: url("../../img/kathy7.jpg");
   height: 400px;
   background-size: cover;
-  opacity: 0.5;
+  /* opacity: 0.5; */
   font-family: "Happy Monkey", sans-serif, cursive;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .quote {
   margin: 100px 0px;
-  background: #93ffd9c4;
+  background: #a500ff;
   color: orange;
   padding: 80px 100px 40px 100px;
   font-family: "Happy Monkey", sans-serif, cursive;
-  font-size: 200%;
+  font-size: 150%;
 }
 .call_to_action {
   background: rgba(255, 166, 0);
   width: 140px;
   height: 25px;
-  border: 4px solid purple;
   padding: 20px 40px;
   margin: auto;
   opacity: 1;
   color: rgb(84, 0, 84);
   font-weight: bold;
-  text-align: center;
   font-size: 115%;
   position: relative;
   top: 250px;
+  left: 30%;
 }
 
 .call_to_action:hover {
@@ -154,6 +153,17 @@ body {
   }
   .padding20px {
     padding: 0px 15px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .call_to_action {
+    width: 50%;
+    bottom: 0px;
+    right: 5px;
+    margin: auto;
+    top: 75px;
+    text-align: center;
   }
 }
 /* put in a media query at 1026px to move  the quote box up a bit */

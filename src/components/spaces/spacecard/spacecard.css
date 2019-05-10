@@ -23,7 +23,7 @@
 
 .space_picture {
   width: 90%;
-  z-index: 0;
+  z-index: -1;
 }
 
 .space_paragraph {

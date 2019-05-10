@@ -46,7 +46,7 @@ class About extends Component {
             door policy, so come any time you like.
           </p>
           <p>
-            <strong>Hours</strong>: 7am-5pm Monday-Friday
+            <strong>Hours</strong>: 7am-5:30pm Monday-Friday
           </p>
         </div>
       </div>
