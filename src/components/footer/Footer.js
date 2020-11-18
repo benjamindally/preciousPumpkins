@@ -11,7 +11,7 @@ class Footer extends Component {
             <br />
             708 Lopes Ct.
             <br />
-            Woodland, CA 95776
+            Woodland, CA 9577
           </p>
         </div>
       </div>
