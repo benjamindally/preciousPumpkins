@@ -1,17 +1,17 @@
-import React, { Component } from "react";
-import "./footer.css";
+import React, { Component } from 'react';
+import './footer.css';
 
 class Footer extends Component {
   render() {
     return (
-      <div className="footer">
-        <div className="footer_paragraph">
+      <div className='footer'>
+        <div className='footer_paragraph'>
           <p>
             Precious Pumpkins
             <br />
             708 Lopes Ct.
             <br />
-            Woodland, CA 95695
+            Woodland, CA 95776
           </p>
         </div>
       </div>
