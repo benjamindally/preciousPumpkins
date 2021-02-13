@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./home.css";
 import Info from "../info-card/Info";
+import butterfly from '../../img/butterfly3.svg'
 
 class Home extends Component {
   render() {
@@ -20,7 +21,7 @@ class Home extends Component {
               <p className="text-center inline">
                 <img
                   className="butterfly large_icon"
-                  src={require("../../img/butterfly3.svg")}
+                  src={butterfly}
                   alt="Precious Pumpkins Butterfly"
                 />
                 We are so happy that you are thinking of us for your childcare

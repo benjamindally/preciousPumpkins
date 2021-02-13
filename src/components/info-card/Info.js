@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import info from "../../img/info.jpg"
 
 export default class Info extends Component {
   render() {
@@ -6,7 +7,7 @@ export default class Info extends Component {
       <div className="information_image_wrapper basic_text_area padding20px">
         <img
           className="information_image"
-          src={require("../../img/info.jpg")}
+          src={info}
           alt="Learn more about Precious Pumpkins"
         />
       </div>
