@@ -26,11 +26,11 @@ body {
   padding:  3% 0 1% 5%;
 } */
 .home_page_main_wrapper {
-  background: url("../../img/kathy7.jpg");
+  background: url('../../img/kathy7.jpg');
   height: 400px;
   background-size: cover;
   /* opacity: 0.5; */
-  font-family: "Happy Monkey", sans-serif, cursive;
+  font-family: 'Happy Monkey', sans-serif, cursive;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -39,13 +39,12 @@ body {
   background: #a500ff;
   color: orange;
   padding: 80px 100px 40px 100px;
-  font-family: "Happy Monkey", sans-serif, cursive;
+  font-family: 'Happy Monkey', sans-serif, cursive;
   font-size: 150%;
 }
 .call_to_action {
   background: rgba(255, 166, 0);
   width: 140px;
-  height: 25px;
   padding: 20px 40px;
   margin: auto;
   opacity: 1;
@@ -74,7 +73,7 @@ body {
 }
 
 .basic_text_area h1 {
-  font-family: "Sacramento", cursive;
+  font-family: 'Sacramento', cursive;
   font-size: 500%;
   color: #7f00c4;
   padding: 3% 0 1% 2%;
@@ -96,7 +95,7 @@ body {
 }
 
 .basic_text_area p {
-  font-family: "Kalam", cursive;
+  font-family: 'Kalam', cursive;
   color: #7f00c4;
   font-size: 150%;
 }
@@ -120,7 +119,7 @@ body {
 
 .facebook_wrapper h1 {
   text-align: center;
-  font-family: "Coiny", cursive;
+  font-family: 'Coiny', cursive;
   color: orange;
   font-size: 250%;
 }

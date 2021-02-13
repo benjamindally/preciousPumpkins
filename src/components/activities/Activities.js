@@ -6,7 +6,7 @@ export default class Activities extends Component {
   state = {
     activitiesInformation,
   };
-
+  
   render() {
     return (
       <div>

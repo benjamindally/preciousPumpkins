@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Multi-Purpose Playroom",
-    "description": "The Playroom is one of the main centers of activity a Precious Pumpkins. In the mornings, one of our excellent staff hosts 'Circle Time' where the children are exposed to new letters, songs, and other eduational games. During naptime, the children set their beds here for an afternoon nap. Anytime of the day, children can be found singing, dancing, learning, or playing here. It's really a mult-purpose space!",
+    "description": "The Playroom is one of the main centers of activity a Precious Pumpkins. In the mornings, one of our excellent staff host's 'Circle Time' where the children are exposed to new letters, songs, and other educational games. During nap-time, the children set their beds here for an afternoon nap. Anytime of the day, children can be found singing, dancing, learning, or playing here. It's really a multi-purpose space!",
     "image": "./assets/images/playroom.jpg"
   },
 
@@ -15,13 +15,13 @@
   {
     "id": 3,
     "name": "Backyard",
-    "description": "The newly built backyard area is great for fresh air, fun, and friends. There are plenty of bikes, playstructures, balls, and toys for everyone. The little ones often shoot baskets in the small basketball hoop and then run over for a drink of water in the seating area. There is even a place to color or work on art projects. The spacious area is a favorite for everyone.",
+    "description": "The newly built backyard area is great for fresh air, fun, and friends. There are plenty of bikes, play structures, balls, and toys for everyone. The little ones often shoot baskets in the small basketball hoop and then run over for a drink of water in the seating area. There is even a place to color or work on art projects. The spacious area is a favorite for everyone.",
     "image": "./assets/images/backyard.jpg"
   },
   {
     "id": 4,
     "name": "Garden",
-    "description": "During the spring and summer, one of our favorite spaces is the garden. In the garden, kids get a chance to see plants grow and even plant their own. Whether it's pointing out a fuzzy catepiller or looking at all the flowers, everyone has a great time learning and playing.",
+    "description": "During the spring and summer, one of our favorite spaces is the garden. In the garden, kids get a chance to see plants grow and even plant their own. Whether it's pointing out a fuzzy caterpillar or looking at all the flowers, everyone has a great time learning and playing.",
     "image": "./assets/images/gardening_pp.jpg"
   }
 ]

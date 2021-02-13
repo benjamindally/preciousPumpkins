@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./nav.css";
+import pumpkin from "../../img/pumpkin.svg"
 
 const screenSize = window.matchMedia(`(max-width: 760px)`);
 
@@ -31,8 +32,8 @@ class Nav extends Component {
           <div>
             <img
               className="pumpkin small_icon"
-              src={require("../../img/pumpkin.svg")}
-              alt="Pumpking Logo"
+              src={pumpkin}
+              alt="Pumpkin Logo"
               onClick={this.responsiveNav}
             />
           </div>
